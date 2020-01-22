@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-generations',
@@ -7,9 +7,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GenerationsComponent implements OnInit {
 
-  constructor() { }
+
+  private tabElements = ['Génération I', 'Génération II', 'Génération III','Génération IV','Génération V', 'Génération VI', 'Génération VII'];
+
+
+
+  constructor() {
+  }
 
   ngOnInit() {
   }
+
+
 
 }
