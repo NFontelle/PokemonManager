@@ -1,8 +1,5 @@
-<div *ngIf="unObjPokemon">
-
-
-
-
+<div>
+  <div (click)="clickOnPoke()">
         <img src="{{image}}{{unObjPokemon.id}}.png">
         <h4>{{unObjPokemon.nom}}</h4>
         Catégorie : <span>{{unObjPokemon.categorie}}</span><br>
@@ -10,7 +7,7 @@
         Taille : <span *ngIf="unObjPokemon.taille; else na">{{unObjPokemon.taille}} m</span><br>
         <ng-template #na>N/A</ng-template>
         Poids : <span *ngIf="unObjPokemon.poids; else na">{{unObjPokemon.poids}} kg</span><br>
-
-      </div>
+  </div>
+</div>
 
 

@@ -1,8 +1,12 @@
-<h1>Les {{pokemons.length}} premiers Pokémons :</h1>
-<p>Dans l'ordre du Pokédex :</p>
+<h1>Les {{nbrPokemon()}} premiers Pokémons :</h1>
+<p>
+<span>Dans l'ordre du Pokédex : </span>
+<span *ngIf="p">{{p.nom}}</span>
+</p>
 
 <div class="row">
-<div *ngFor= "let unObj of pokemons" class="col-4">
-   <app-pokemon [unObjPokemon]=unObj></app-pokemon>
+  <div *ngFor= "let unObj of pokemons" class="col-4">
+    <app-pokemon [unObjPokemon]=unObj (clickPoke)="p=$event"></app-pokemon>
+  </div>
+</div>
 
- </div>
