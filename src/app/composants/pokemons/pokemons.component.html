@@ -1,7 +1,9 @@
 <h1>Les {{pokemons.length}} premiers Pokémons :</h1>
 <p>Dans l'odre du Pokédex :</p>
+ <div *for= "let unObj of pokemons">
+   <app-pokemon[unObjPokemon]=unObj></app-pokemon>
+ </div>
 
-<app-pokemon></app-pokemon>
 
 
 

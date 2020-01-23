@@ -7,7 +7,6 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PokemonsComponent implements OnInit {
 
-  image = 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/';
 
   private pokemons = [
     { id : 1, nom : 'Bulbizarre', cathegorie : 'graine', type : ['plante, poison'], taille : 0.70, poid : 6.9},
