@@ -1,1 +1,16 @@
-<p>pokemons works!</p>
+<h1>Les {{pokemons.length}} premiers Pokémons :</h1>
+<p>Dans l'odre du Pokédex :</p>
+
+
+<div class="row">
+  <div *ngFor="let element of pokemons" class="col-4">
+    <img src="{{image}}{{element.id}}.png"><br>
+    {{element.nom}}<br>
+    catégorie : {{element.cathegorie}}<br>
+    Type :
+    <span *ngFor="let t of element.type; let dernier = last"> <span>{{t}}</span> <span *ngIf="!dernier">,</span> </span> <br>
+    <span *ngIf="element.taille"> Taille : {{element.taille}} m</span> <span *ngIf="!element.taille">Taille : N/A</span> <br>
+    <span *ngIf="element.poid; else na"> Poids : {{element.poid}} kg</span> <ng-template #na> Poids : N/A</ng-template>
+  </div>
+</div>
+

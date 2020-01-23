@@ -6,18 +6,14 @@ import {Component, OnInit} from '@angular/core';
   styleUrls: ['./generations.component.css']
 })
 export class GenerationsComponent implements OnInit {
-
-
-  private tabElements = ['Génération I', 'Génération II', 'Génération III', 'Génération IV', 'Génération V', 'Génération VI', 'Génération VII'];
-
-
+  // tslint:disable-next-line:max-line-length
+  private generation = ['Génération I', 'Génération II', 'Génération III', 'Génération IV', 'Génération V', 'Génération VI', 'Génération VII', 'Génération VIII'];
 
   constructor() {
   }
 
   ngOnInit() {
   }
-
 
 
 }
