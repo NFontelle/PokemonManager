@@ -1,9 +1,8 @@
 <h1>Les {{pokemons.length}} premiers Pokémons :</h1>
-<p>Dans l'odre du Pokédex :</p>
- <div *for= "let unObj of pokemons">
-   <app-pokemon[unObjPokemon]=unObj></app-pokemon>
+<p>Dans l'ordre du Pokédex :</p>
+
+<div class="row">
+<div *ngFor= "let unObj of pokemons" class="col-4">
+   <app-pokemon [unObjPokemon]=unObj></app-pokemon>
+
  </div>
-
-
-
-

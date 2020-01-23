@@ -9,7 +9,7 @@ import { PokemonsComponent } from './composants/pokemons/pokemons.component';
 import {LOCALE_ID} from '@angular/core';
 import  {registerLocaleData} from '@angular/common';
 import localFR from '@angular/common/locales/fr';
-import { PokemonComponent } from './pokemon/pokemon.component';
+import { PokemonComponent } from './composants/pokemon/pokemon.component';
 registerLocaleData(localFR);
 
 @NgModule({
