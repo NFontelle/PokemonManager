@@ -1,6 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {AffichageService} from '../../service/affichage.service';
 import {Pokemon} from '../../modele/pokemon';
+import {ActivatedRoute} from '@angular/router';
 
 @Component({
   selector: 'app-pokemons',
@@ -13,7 +14,7 @@ export class PokemonsComponent implements OnInit {
   compteur: number;
   p;
 
-  constructor(private affichageService: AffichageService) {
+  constructor(private affichageService: AffichageService, private route: ActivatedRoute) {
   }
 
   ngOnInit() {

@@ -14,6 +14,8 @@ import {FormsModule} from '@angular/forms';
 import { BarreNavComponent } from './composants/barre-nav/barre-nav.component';
 import { PagedAccComponent } from './composants/paged-acc/paged-acc.component';
 import { ConnexionComponent } from './composants/connexion/connexion.component';
+import { CompteComponent } from './composants/compte/compte.component';
+import { Erreur404Component } from './composants/erreur404/erreur404.component';
 registerLocaleData(localFR);
 
 @NgModule({
@@ -24,7 +26,9 @@ registerLocaleData(localFR);
     PokemonComponent,
     BarreNavComponent,
     PagedAccComponent,
-    ConnexionComponent
+    ConnexionComponent,
+    CompteComponent,
+    Erreur404Component
   ],
   imports: [
     BrowserModule,
