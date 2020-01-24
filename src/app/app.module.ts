@@ -10,6 +10,10 @@ import {LOCALE_ID} from '@angular/core';
 import  {registerLocaleData} from '@angular/common';
 import localFR from '@angular/common/locales/fr';
 import { PokemonComponent } from './composants/pokemon/pokemon.component';
+import {FormsModule} from '@angular/forms';
+import { BarreNavComponent } from './composants/barre-nav/barre-nav.component';
+import { PagedAccComponent } from './composants/paged-acc/paged-acc.component';
+import { ConnexionComponent } from './composants/connexion/connexion.component';
 registerLocaleData(localFR);
 
 @NgModule({
@@ -17,11 +21,15 @@ registerLocaleData(localFR);
     AppComponent,
     GenerationsComponent,
     PokemonsComponent,
-    PokemonComponent
+    PokemonComponent,
+    BarreNavComponent,
+    PagedAccComponent,
+    ConnexionComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [{provide: LOCALE_ID, useValue: 'fr'}],
   bootstrap: [AppComponent]

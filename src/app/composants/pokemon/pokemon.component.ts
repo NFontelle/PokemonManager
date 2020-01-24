@@ -20,4 +20,9 @@ export class PokemonComponent implements OnInit {
     console.log('clik ok')
     this.clickPoke.emit(this.unObjPokemon);
   }
+
+
+
+
+
 }

@@ -1,10 +1,20 @@
-<h1>Les {{nbrPokemon()}} premiers Pokémons :</h1>
+<form #recherche="ngForm">
+  <input type="text" name="pokemon" ngModel (keyup)="envoyer(recherche.value.pokemon)">
+  <button type="reset" (click)="reinitRecherche()">Réinitialiser</button>
+
+</form>
+
+
+
+
+<h1>Les {{compteur}} premiers Pokémons :</h1>
 <p>
 <span>Dans l'ordre du Pokédex : </span>
 <span *ngIf="p">{{p.nom}}</span>
 </p>
 
 <div class="row">
+  <div *ngIf="pokemons.length<1">Aucun Pokemon trouvé</div>
   <div *ngFor= "let unObj of pokemons" class="col-4">
     <app-pokemon [unObjPokemon]=unObj (clickPoke)="p=$event"></app-pokemon>
   </div>
